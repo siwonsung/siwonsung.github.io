@@ -5,30 +5,24 @@ permalink: /research/
 author_profile: true
 ---
 
-## AI-Mediated Multilingual Writing
+## AI-Mediated Writing Process
 
-This line of research examines how multilingual and L2 writers engage with generative AI during authentic academic writing. Rather than treating prompting as an isolated act, I study the broader writing process surrounding AI use: how writers formulate requests, read and evaluate AI-generated text, revise their own writing, and coordinate AI with other digital tools.
+This line of research examines how multilingual and L2 writers engage with generative AI during authentic writing processes. Rather than treating prompting as an isolated act, I study how writers formulate requests, read and evaluate AI-generated text, revise their own writing, and coordinate AI with other digital tools across the writing process.
 
-My work uses screen recording, webcam-based eye tracking, stimulated recall, and interviews to trace otherwise difficult-to-observe processes such as reading, attention, revision, and movement across writing environments.
-
----
-
-## Process-Tracing Digital Learning with Webcam-Based Eye Tracking
-
-I investigate how webcam-based eye tracking can support qualitative research on learning and writing processes in naturalistic digital environments. This work includes the development and application of SNUWET, a webcam-based eye-tracking tool designed to make learners' visual attention and interaction with multimodal digital environments more accessible to qualitative researchers.
-
-Current applications include academic writing, multimodal composing, and the analysis of learners' reading and viewing processes across digital tools and texts.
+My work uses process-tracing methods such as screen recording, webcam-based eye tracking, stimulated recall, and interviews to make otherwise difficult-to-observe activities such as reading, attention, revision, and tool orchestration visible.
 
 ---
 
-## AI, Literacy, and Classroom Practice
+## SNUWET: Ecological Data Collection for Digital Learning
 
-This research examines how generative AI is introduced, interpreted, and used in writing classrooms. I am particularly interested in how instructors position AI, how multilingual students engage with AI-supported writing tools, and how classroom norms around acceptable and productive AI use emerge through practice.
+This research explores how webcam-based eye tracking can support ecological and qualitative investigation of digital learning in naturalistic settings. A central part of this work is SNUWET, a webcam-based eye-tracking tool developed to capture learners' visual attention while preserving the digital environments in which learning actually takes place.
 
-This work connects interaction-level analysis of AI-mediated writing with broader questions of AI literacy, digital literacy, pedagogy, and institutional context.
+I use SNUWET alongside screen recording and other process data to examine writing, reading, multimodal composing, and movement across digital tools and texts.
 
 ---
 
-## Sociomaterial and Discursive Studies of Educational Technology
+## Postdigital Conversation Analysis
 
-A broader strand of my research examines how educational technologies are constituted through relationships among people, technologies, institutions, policy, and discourse. Drawing on sociomaterial, ecological, and critical discourse perspectives, I study how technologies such as AI Digital Textbooks are positioned in educational policy and how particular roles, expectations, and power relations are produced around them.
+This line of research examines interaction in postdigital learning environments, where talk, screens, AI systems, documents, and other material resources are intertwined in the unfolding of activity. I am interested in how participants coordinate these resources moment by moment and how digital and non-digital elements become consequential within collaborative interaction.
+
+This work uses close analysis of naturally occurring interaction to trace how meaning, participation, and action emerge through the coordination of talk, embodied conduct, technologies, and material environments.
