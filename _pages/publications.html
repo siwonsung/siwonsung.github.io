@@ -5,32 +5,20 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<h2>Journal Articles</h2>
 
-{% include base_path %}
+<ul>
+  <li>Lee, K., <strong>Sung, S.</strong>, Kim, C., &amp; Jang, I. C. (2026). Postdigital marketization through AI Digital Textbook: Edtech industry assemblage in South Korea. <em>Postdigital Science and Education</em>. Advance online publication. <a href="https://doi.org/10.1007/s42438-026-00676-y">DOI</a></li>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  <li><strong>Sung, S.</strong>, Lee, B., &amp; Jang, I. C. (2026). The recontextualization trajectory of social actors in South Korea’s AIDT Policy: A critical discourse analysis of AIDT policy documents. <em>The Sociolinguistic Journal of Korea, 34</em>(2), 331–378. <a href="https://doi.org/10.14353/sjk.2026.34.2.11">DOI</a></li>
 
+  <li><strong>Sung, S.</strong>, &amp; Jang, I. C. (2024). South Korean STEM graduate students’ use of ChatGPT in self-initiated L2 writing: An explorative qualitative study. <em>Korean Journal of English Language and Linguistics, 24</em>, 1415–1435. <a href="https://doi.org/10.15738/kjell.24..202412.1415">DOI</a></li>
 
+  <li>Hwang, H., &amp; <strong>Sung, S.</strong> (2024). Discursive representations of institution-led global citizenship education in South Korean newspapers: A critical discourse analysis. <em>The Sociolinguistic Journal of Korea, 32</em>(3), 207–243. <a href="https://doi.org/10.14353/sjk.2024.32.3.08">DOI</a></li>
+</ul>
 
+<h2>Peer-Reviewed Conference Proceedings</h2>
+
+<ul>
+  <li><strong>Sung, S.</strong>, Ryu, H., Hwang, J., &amp; Jang, I. C. (2026). Exploring digital learning processes through webcam-based eye tracking: Development and applications of SNUWET. In <em>Proceedings of the International Society of the Learning Sciences (ISLS) Annual Meeting</em>.</li>
+</ul>
