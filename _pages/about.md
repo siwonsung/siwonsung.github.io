@@ -13,9 +13,9 @@ I explore this broader question in two contexts. First, I study how multilingual
 
 Second, I investigate how generative AI reshapes collaborative classroom interaction. Using conversation analysis and screen recording, I examine how the introduction of AI reorganizes moment-to-moment interaction and cooperative action in group discussions, and how these changes shape multilingual learners’ access to and participation in classroom discourse.
 
-I extend this line of inquiry by rethinking learner–technology relationships through sociomaterial and postdigital perspectives and by developing methodological approaches that attend to the complex and entangled nature of these relationships. As digital spaces become important sites of learning, I develop ecologically valid methods for collecting qualitative process data within these environments, including SNUWET, a webcam-based eye-tracking tool for tracing learners’ moment-to-moment visual attention. I also use multimodal interaction analysis to examine how learners coordinate linguistic, embodied, and technological resources in practice.
+I extend this line of inquiry by rethinking learner–technology relationships through sociomaterial and postdigital perspectives and by developing methodological approaches that attend to the complex and entangled nature of these relationships. As digital spaces become important sites of learning, I develop ecologically valid methods for collecting qualitative process data within these environments, including SNUWET, a webcam-based eye-tracking tool for tracing learners’ moment-to-moment visual attention and activity across digital environments.
 
-Before joining UCI, I earned an M.A. in English Language Education from Seoul National University and a B.A. in English Language Education from Korea University. I also taught English to elementary students from underserved communities in Korea and worked at a Seoul-based EdTech company before beginning my doctoral studies.
+Before joining UCI, I earned an M.A. in English Language Education from Seoul National University and a B.A. in English Language Education from Korea University.
 
 ## Research Interests
 
