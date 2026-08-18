@@ -1,24 +1,34 @@
 ---
 layout: archive
-title: "Research"
+title: "Featured Research Projects"
 permalink: /research/
 author_profile: true
 ---
 
-My research lies at the intersection of applied linguistics, writing research, and educational technology. I am particularly interested in understanding how multilingual writers engage with generative AI and other digital tools as part of their writing processes.
+## AI-Mediated Multilingual Writing
 
-## AI-Mediated Writing
+This line of research examines how multilingual and L2 writers engage with generative AI during authentic academic writing. Rather than treating prompting as an isolated act, I study the broader writing process surrounding AI use: how writers formulate requests, read and evaluate AI-generated text, revise their own writing, and coordinate AI with other digital tools.
 
-I examine how multilingual and L2 writers interact with generative AI during authentic academic writing. Rather than focusing only on prompts or final written products, my work investigates the broader process surrounding AI use, including how writers formulate requests, read and evaluate AI-generated text, revise their writing, and coordinate AI with other digital tools.
+My work uses screen recording, webcam-based eye tracking, stimulated recall, and interviews to trace otherwise difficult-to-observe processes such as reading, attention, revision, and movement across writing environments.
 
-## Writing Processes and Digital Tool Use
+---
 
-A central focus of my research is making writing processes that are often difficult to observe empirically more visible. I use qualitative and multimodal methods, including screen recording, webcam-based eye tracking, stimulated recall, and interviews, to trace writers' attention, reading, revision, and movement across digital environments.
+## Process-Tracing Digital Learning with Webcam-Based Eye Tracking
 
-## Ecological and Sociomaterial Perspectives
+I investigate how webcam-based eye tracking can support qualitative research on learning and writing processes in naturalistic digital environments. This work includes the development and application of SNUWET, a webcam-based eye-tracking tool designed to make learners' visual attention and interaction with multimodal digital environments more accessible to qualitative researchers.
 
-I approach writing and technology use as situated practices distributed across writers, texts, tools, interfaces, and institutional contexts. Ecological and sociomaterial perspectives help me examine how particular forms of AI use emerge through these relationships rather than treating technology as an isolated intervention.
+Current applications include academic writing, multimodal composing, and the analysis of learners' reading and viewing processes across digital tools and texts.
 
-## AI, Literacy, and Educational Discourse
+---
 
-My broader research also examines how generative AI is positioned and negotiated in educational contexts, including institutional practices, classroom norms, and policy discourse.
+## AI, Literacy, and Classroom Practice
+
+This research examines how generative AI is introduced, interpreted, and used in writing classrooms. I am particularly interested in how instructors position AI, how multilingual students engage with AI-supported writing tools, and how classroom norms around acceptable and productive AI use emerge through practice.
+
+This work connects interaction-level analysis of AI-mediated writing with broader questions of AI literacy, digital literacy, pedagogy, and institutional context.
+
+---
+
+## Sociomaterial and Discursive Studies of Educational Technology
+
+A broader strand of my research examines how educational technologies are constituted through relationships among people, technologies, institutions, policy, and discourse. Drawing on sociomaterial, ecological, and critical discourse perspectives, I study how technologies such as AI Digital Textbooks are positioned in educational policy and how particular roles, expectations, and power relations are produced around them.
