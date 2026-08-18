@@ -5,6 +5,14 @@ permalink: /publications/
 author_profile: true
 ---
 
+{% assign thesis_file = site.static_files | where: "path", "/files/Siwon_Sung_MA_Thesis_2024.pdf" | first %}
+
+<h2>Master's Thesis</h2>
+
+<ul>
+  <li><strong>Sung, S.</strong> (2024). <em>Korean EFL STEM Graduate Students' Use of ChatGPT in L2 Writing Process: A Case Study from an Ecological Perspective</em>. Master's thesis, Seoul National University.{% if thesis_file %} <a href="{{ '/files/Siwon_Sung_MA_Thesis_2024.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}</li>
+</ul>
+
 <h2>Journal Articles</h2>
 
 <ul>
