@@ -7,9 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student in the School of Education at the University of California, Irvine, and a Graduate Student Researcher in the UCI Digital Learning Lab. My research examines how multilingual writers engage with generative AI and other digital tools during academic writing, with particular attention to writing processes, reading–writing interactions, and tool use in authentic contexts.
+I am a Ph.D. student in Education at the University of California, Irvine, advised by [Dr. Mark Warschauer](http://markwarschauer.com/) and [Dr. Penelope Collins](https://sites.google.com/uci.edu/penelopecollins/home). My research agenda investigates how generative AI shapes multilingual learners’ access to and participation in their desired discourse communities.
 
-Methodologically, I am interested in qualitative and multimodal approaches that make otherwise difficult-to-observe writing processes visible, including screen recording, webcam-based eye tracking, stimulated recall, and discourse analysis. Across this work, I draw on ecological and sociomaterial perspectives to understand writing as distributed across people, technologies, texts, and institutional contexts.
+I explore this broader question in two contexts. First, I study how multilingual learners interact with generative AI during authentic writing processes. Using process-tracing methods, I examine moment-to-moment interactions among writers, AI, texts, and other digital tools to understand how generative AI is reshaping writing practices.
+
+Second, I investigate how generative AI reshapes collaborative classroom interaction. Using conversation analysis and screen recording, I examine how the introduction of AI reorganizes moment-to-moment interaction and cooperative action in group discussions, and how these changes shape multilingual learners’ access to and participation in classroom discourse.
+
+I extend this line of inquiry by rethinking learner–technology relationships through sociomaterial and postdigital perspectives and by developing methodological approaches that attend to the complex and entangled nature of these relationships. As digital spaces become important sites of learning, I develop ecologically valid methods for collecting qualitative process data within these environments, including SNUWET, a webcam-based eye-tracking tool for tracing learners’ moment-to-moment visual attention. I also use multimodal interaction analysis to examine how learners coordinate linguistic, embodied, and technological resources in practice.
+
+Before joining UCI, I earned an M.A. in English Language Education from Seoul National University and a B.A. in English Language Education from Korea University. I also taught English to elementary students from underserved communities in Korea and worked at a Seoul-based EdTech company before beginning my doctoral studies.
 
 ## Research Interests
 
