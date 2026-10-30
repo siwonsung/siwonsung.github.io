@@ -1,7 +1,7 @@
 # Thumbnail upload convention:
 # Put a custom image in images/publications/ using the publication slug plus .webp, .jpg, .jpeg, or .png.
 # The page picks the first available image in that order, then falls back to the matching .svg preview.
-# Example: images/publications/2026-snu-wet-isls.webp
+# Example: images/publications/2026-sunwet-isls.webp
 - slug: 2026-postdigital-marketization
   year: 2026
   badge: PSE
