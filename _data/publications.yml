@@ -1,0 +1,68 @@
+# Thumbnail upload convention:
+# Put a custom image in images/publications/ using the publication slug plus .webp, .jpg, .jpeg, or .png.
+# The page picks the first available image in that order, then falls back to the matching .svg preview.
+# Example: images/publications/2026-snu-wet-isls.webp
+- slug: 2026-postdigital-marketization
+  year: 2026
+  badge: PSE
+  title: "Postdigital marketization through AI Digital Textbook: Edtech industry assemblage in South Korea"
+  authors_html: "Lee, K., <strong>Sung, S.</strong>, Kim, C., &amp; Jang, I. C."
+  venue_html: "<em>Postdigital Science and Education</em>. Advance online publication."
+  doi: "https://doi.org/10.1007/s42438-026-00676-y"
+  pdf: "/files/2026_Lee_Sung_Kim_Jang_Postdigital_Marketization.pdf"
+  search: "lee sung kim jang 2026 postdigital marketization ai digital textbook edtech postdigital science education"
+  thumbnail_alt: "Illustrated preview of Postdigital marketization through AI Digital Textbook"
+
+- slug: 2026-aidt-policy-cda
+  year: 2026
+  badge: SJK
+  title: "The recontextualization trajectory of social actors in South Korea’s AIDT Policy: A critical discourse analysis of AIDT policy documents"
+  authors_html: "<strong>Sung, S.</strong>, Lee, B., &amp; Jang, I. C."
+  venue_html: "<em>The Sociolinguistic Journal of Korea, 34</em>(2), 331–378."
+  doi: "https://doi.org/10.14353/sjk.2026.34.2.11"
+  pdf: "/files/2026_Sung_Lee_Jang_AIDT_Policy_CDA.pdf"
+  search: "sung lee jang 2026 recontextualization social actors south korea aidt policy critical discourse analysis sociolinguistic journal korea"
+  thumbnail_alt: "Illustrated preview of The recontextualization trajectory of social actors in South Korea’s AIDT Policy"
+
+- slug: 2026-sunwet-isls
+  year: 2026
+  badge: ISLS · ICLS 2026
+  title: "Exploring digital learning processes through webcam-based eye tracking: Development and applications of SNUWET"
+  authors_html: "<strong>Sung, S.</strong>, Ryu, H., Hwang, J., &amp; Jang, I. C."
+  venue_html: "In <em>Proceedings of the International Society of the Learning Sciences (ISLS) Annual Meeting</em>."
+  doi: "https://doi.org/10.22318/icls2026.442573"
+  pdf: "/files/2026_ISLS_Proceedings_Sung_et_al.pdf"
+  search: "sung ryu hwang jang 2026 exploring digital learning processes webcam eye tracking snuwet icls isls proceedings"
+  thumbnail_alt: "Illustrated preview of Exploring digital learning processes through webcam-based eye tracking: Development and applications of SNUWET"
+
+- slug: 2024-chatgpt-writing
+  year: 2024
+  badge: KJELL
+  title: "South Korean STEM graduate students’ use of ChatGPT in self-initiated L2 writing: An explorative qualitative study"
+  authors_html: "<strong>Sung, S.</strong>, &amp; Jang, I. C."
+  venue_html: "<em>Korean Journal of English Language and Linguistics, 24</em>, 1415–1435."
+  doi: "https://doi.org/10.15738/kjell.24..202412.1415"
+  pdf: "/files/2024_Sung_Jang_ChatGPT_L2_Writing.pdf"
+  search: "sung jang 2024 south korean stem graduate students chatgpt self initiated l2 writing korean journal english language linguistics"
+  thumbnail_alt: "Illustrated preview of South Korean STEM graduate students’ use of ChatGPT in self-initiated L2 writing"
+
+- slug: 2024-global-citizenship
+  year: 2024
+  badge: SJK
+  title: "Discursive representations of institution-led global citizenship education in South Korean newspapers: A critical discourse analysis"
+  authors_html: "Hwang, H., &amp; <strong>Sung, S.</strong>"
+  venue_html: "<em>The Sociolinguistic Journal of Korea, 32</em>(3), 207–243."
+  doi: "https://doi.org/10.14353/sjk.2024.32.3.08"
+  pdf: "/files/2024_Hwang_Sung_Global_Citizenship_Education_CDA.pdf"
+  search: "hwang sung 2024 discursive representations institution led global citizenship education south korean newspapers critical discourse analysis sociolinguistic journal korea"
+  thumbnail_alt: "Illustrated preview of Discursive representations of institution-led global citizenship education in South Korean newspapers"
+
+- slug: 2024-masters-thesis
+  year: 2024
+  badge: SNU Thesis
+  title: "Korean EFL STEM Graduate Students’ Use of ChatGPT in L2 Writing Process: A Case Study from an Ecological Perspective"
+  authors_html: "<strong>Sung, S.</strong>"
+  venue_html: "Master’s thesis, Seoul National University."
+  pdf: "/files/Siwon_Sung_MA_Thesis_2024.pdf"
+  search: "sung 2024 korean efl stem graduate students chatgpt l2 writing process ecological perspective master thesis seoul national university"
+  thumbnail_alt: "Illustrated preview of Korean EFL STEM Graduate Students’ Use of ChatGPT in L2 Writing Process"

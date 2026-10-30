@@ -21,8 +21,7 @@ author_profile: false
 .publication-thumbnail img { display: block; width: 100%; height: auto; border: 1px solid #e1e5ea; background: #f4f6f8; box-shadow: 0 2px 7px rgba(0,0,0,.12); transform: scale(1); transform-origin: top left; transition: transform .22s ease, box-shadow .22s ease; }
 .publication-thumbnail:hover img, .publication-thumbnail:focus-visible img { transform: scale(2.05); box-shadow: 0 8px 24px rgba(0,0,0,.24); }
 .publication-thumbnail:focus-visible img { outline: 2px solid #356a91; outline-offset: 3px; }
-.publication-details { min-width: 0; }
-.publication-title { margin: 0 0 .25rem; font-size: 1rem; line-height: 1.4; font-weight: 600; }
+.publication-title { margin: 0 0 .25rem; font-size: 1rem; line-height: 1.4; font-weight: 500; }
 .publication-authors, .publication-venue { margin: .18rem 0; }
 .publication-venue { font-style: italic; }
 .publication-actions { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .55rem; }
@@ -44,122 +43,43 @@ author_profile: false
   <label class="publication-search-label" for="publication-filter">Filter publications</label>
   <input class="publication-search" id="publication-filter" type="search" placeholder="Type to filter" autocomplete="off">
 
-  <section class="publication-year-group" aria-labelledby="publications-2026">
-    <h2 class="publication-year" id="publications-2026">2026</h2>
+  {% assign publication_groups = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+  {% for group in publication_groups %}
+  <section class="publication-year-group" aria-labelledby="publications-{{ group.name }}">
+    <h2 class="publication-year" id="publications-{{ group.name }}">{{ group.name }}</h2>
     <div class="publication-list">
-      <article class="publication-item" data-search="lee sung kim jang 2026 postdigital marketization ai digital textbook edtech postdigital science education">
+      {% for publication in group.items %}
+        {% assign thumbnail_webp = '/images/publications/' | append: publication.slug | append: '.webp' %}
+        {% assign thumbnail_jpg = '/images/publications/' | append: publication.slug | append: '.jpg' %}
+        {% assign thumbnail_jpeg = '/images/publications/' | append: publication.slug | append: '.jpeg' %}
+        {% assign thumbnail_png = '/images/publications/' | append: publication.slug | append: '.png' %}
+        {% assign thumbnail_svg = '/images/publications/' | append: publication.slug | append: '.svg' %}
+        {% assign publication_thumbnail = site.static_files | where: "path", thumbnail_webp | first %}
+        {% unless publication_thumbnail %}{% assign publication_thumbnail = site.static_files | where: "path", thumbnail_jpg | first %}{% endunless %}
+        {% unless publication_thumbnail %}{% assign publication_thumbnail = site.static_files | where: "path", thumbnail_jpeg | first %}{% endunless %}
+        {% unless publication_thumbnail %}{% assign publication_thumbnail = site.static_files | where: "path", thumbnail_png | first %}{% endunless %}
+        {% unless publication_thumbnail %}{% assign publication_thumbnail = site.static_files | where: "path", thumbnail_svg | first %}{% endunless %}
+      <article class="publication-item" data-search="{{ publication.search | escape }}">
         <div class="publication-media">
-          <span class="publication-badge">Journal</span>
-          <a class="publication-thumbnail" href="{{ '/files/2026_Lee_Sung_Kim_Jang_Postdigital_Marketization.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the PDF for Postdigital marketization through AI Digital Textbook">
-            <img src="{{ '/images/publications/2026-postdigital-marketization.svg' | relative_url }}" alt="Illustrated preview of Postdigital marketization through AI Digital Textbook">
+          <span class="publication-badge">{{ publication.badge | escape }}</span>
+          <a class="publication-thumbnail" href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener" aria-label="Open the PDF for {{ publication.title | escape }}">
+            <img src="{{ publication_thumbnail.path | relative_url }}" alt="{{ publication.thumbnail_alt | escape }}">
           </a>
         </div>
         <div class="publication-details">
-          <h3 class="publication-title">Postdigital marketization through AI Digital Textbook: Edtech industry assemblage in South Korea</h3>
-          <p class="publication-authors">Lee, K., <strong>Sung, S.</strong>, Kim, C., &amp; Jang, I. C. (2026).</p>
-          <p class="publication-venue"><em>Postdigital Science and Education</em>. Advance online publication.</p>
+          <h3 class="publication-title">{{ publication.title | escape }}</h3>
+          <p class="publication-authors">{{ publication.authors_html }}</p>
+          <p class="publication-venue">{{ publication.venue_html }}</p>
           <div class="publication-actions">
-            <a class="publication-action" href="https://doi.org/10.1007/s42438-026-00676-y" target="_blank" rel="noopener">DOI</a>
-            <a class="publication-action" href="{{ '/files/2026_Lee_Sung_Kim_Jang_Postdigital_Marketization.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
+            {% if publication.doi %}<a class="publication-action" href="{{ publication.doi | escape }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+            <a class="publication-action" href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>
           </div>
         </div>
       </article>
-
-      <article class="publication-item" data-search="sung lee jang 2026 recontextualization social actors south korea aidt policy critical discourse analysis sociolinguistic journal korea">
-        <div class="publication-media">
-          <span class="publication-badge">Journal</span>
-          <a class="publication-thumbnail" href="{{ '/files/2026_Sung_Lee_Jang_AIDT_Policy_CDA.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the PDF for The recontextualization trajectory of social actors in South Korea’s AIDT Policy">
-            <img src="{{ '/images/publications/2026-aidt-policy-cda.svg' | relative_url }}" alt="Illustrated preview of The recontextualization trajectory of social actors in South Korea’s AIDT Policy">
-          </a>
-        </div>
-        <div class="publication-details">
-          <h3 class="publication-title">The recontextualization trajectory of social actors in South Korea’s AIDT Policy: A critical discourse analysis of AIDT policy documents</h3>
-          <p class="publication-authors"><strong>Sung, S.</strong>, Lee, B., &amp; Jang, I. C. (2026).</p>
-          <p class="publication-venue"><em>The Sociolinguistic Journal of Korea, 34</em>(2), 331–378.</p>
-          <div class="publication-actions">
-            <a class="publication-action" href="https://doi.org/10.14353/sjk.2026.34.2.11" target="_blank" rel="noopener">DOI</a>
-            <a class="publication-action" href="{{ '/files/2026_Sung_Lee_Jang_AIDT_Policy_CDA.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="publication-item" data-search="sung ryu hwang jang 2026 exploring digital learning processes webcam eye tracking snuwet icls isls proceedings">
-        <div class="publication-media">
-          <span class="publication-badge">ISLS · ICLS 2026</span>
-          <a class="publication-thumbnail" href="{{ '/files/2026_ISLS_Proceedings_Sung_et_al.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the PDF for Exploring digital learning processes through webcam-based eye tracking">
-            <img src="{{ '/images/publications/2026-sunwet-isls.svg' | relative_url }}" alt="Illustrated preview of Exploring digital learning processes through webcam-based eye tracking: Development and applications of SNUWET">
-          </a>
-        </div>
-        <div class="publication-details">
-          <h3 class="publication-title">Exploring digital learning processes through webcam-based eye tracking: Development and applications of SNUWET</h3>
-          <p class="publication-authors"><strong>Sung, S.</strong>, Ryu, H., Hwang, J., &amp; Jang, I. C. (2026).</p>
-          <p class="publication-venue">In <em>Proceedings of the International Society of the Learning Sciences (ISLS) Annual Meeting</em>.</p>
-          <div class="publication-actions">
-            <a class="publication-action" href="https://doi.org/10.22318/icls2026.442573" target="_blank" rel="noopener">DOI</a>
-            <a class="publication-action" href="{{ '/files/2026_ISLS_Proceedings_Sung_et_al.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-          </div>
-        </div>
-      </article>
+      {% endfor %}
     </div>
   </section>
-
-  <section class="publication-year-group" aria-labelledby="publications-2024">
-    <h2 class="publication-year" id="publications-2024">2024</h2>
-    <div class="publication-list">
-      <article class="publication-item" data-search="sung jang 2024 south korean stem graduate students chatgpt self initiated l2 writing korean journal english language linguistics">
-        <div class="publication-media">
-          <span class="publication-badge">Journal</span>
-          <a class="publication-thumbnail" href="{{ '/files/2024_Sung_Jang_ChatGPT_L2_Writing.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the PDF for South Korean STEM graduate students’ use of ChatGPT in self-initiated L2 writing">
-            <img src="{{ '/images/publications/2024-chatgpt-writing.svg' | relative_url }}" alt="Illustrated preview of South Korean STEM graduate students’ use of ChatGPT in self-initiated L2 writing">
-          </a>
-        </div>
-        <div class="publication-details">
-          <h3 class="publication-title">South Korean STEM graduate students’ use of ChatGPT in self-initiated L2 writing: An explorative qualitative study</h3>
-          <p class="publication-authors"><strong>Sung, S.</strong>, &amp; Jang, I. C. (2024).</p>
-          <p class="publication-venue"><em>Korean Journal of English Language and Linguistics, 24</em>, 1415–1435.</p>
-          <div class="publication-actions">
-            <a class="publication-action" href="https://doi.org/10.15738/kjell.24..202412.1415" target="_blank" rel="noopener">DOI</a>
-            <a class="publication-action" href="{{ '/files/2024_Sung_Jang_ChatGPT_L2_Writing.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="publication-item" data-search="hwang sung 2024 discursive representations institution led global citizenship education south korean newspapers critical discourse analysis sociolinguistic journal korea">
-        <div class="publication-media">
-          <span class="publication-badge">Journal</span>
-          <a class="publication-thumbnail" href="{{ '/files/2024_Hwang_Sung_Global_Citizenship_Education_CDA.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the PDF for Discursive representations of institution-led global citizenship education in South Korean newspapers">
-            <img src="{{ '/images/publications/2024-global-citizenship.svg' | relative_url }}" alt="Illustrated preview of Discursive representations of institution-led global citizenship education in South Korean newspapers">
-          </a>
-        </div>
-        <div class="publication-details">
-          <h3 class="publication-title">Discursive representations of institution-led global citizenship education in South Korean newspapers: A critical discourse analysis</h3>
-          <p class="publication-authors">Hwang, H., &amp; <strong>Sung, S.</strong> (2024).</p>
-          <p class="publication-venue"><em>The Sociolinguistic Journal of Korea, 32</em>(3), 207–243.</p>
-          <div class="publication-actions">
-            <a class="publication-action" href="https://doi.org/10.14353/sjk.2024.32.3.08" target="_blank" rel="noopener">DOI</a>
-            <a class="publication-action" href="{{ '/files/2024_Hwang_Sung_Global_Citizenship_Education_CDA.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="publication-item" data-search="sung 2024 korean efl stem graduate students chatgpt l2 writing process ecological perspective master thesis seoul national university">
-        <div class="publication-media">
-          <span class="publication-badge">Master’s thesis</span>
-          <a class="publication-thumbnail" href="{{ '/files/Siwon_Sung_MA_Thesis_2024.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the PDF for the 2024 Master’s thesis">
-            <img src="{{ '/images/publications/2024-masters-thesis.svg' | relative_url }}" alt="Illustrated preview of Korean EFL STEM Graduate Students’ Use of ChatGPT in L2 Writing Process">
-          </a>
-        </div>
-        <div class="publication-details">
-          <h3 class="publication-title">Korean EFL STEM Graduate Students’ Use of ChatGPT in L2 Writing Process: A Case Study from an Ecological Perspective</h3>
-          <p class="publication-authors"><strong>Sung, S.</strong> (2024).</p>
-          <p class="publication-venue">Master’s thesis, Seoul National University.</p>
-          <div class="publication-actions">
-            <a class="publication-action" href="{{ '/files/Siwon_Sung_MA_Thesis_2024.pdf' | relative_url }}" target="_blank" rel="noopener">PDF</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
+  {% endfor %}
 </div>
 
 <script>
