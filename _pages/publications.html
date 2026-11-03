@@ -12,13 +12,12 @@ author_profile: false
 .publication-search { box-sizing: border-box; width: min(100%, 350px); margin: 0 0 1.25rem; padding: .65rem .8rem; border: 1px solid #858585; border-radius: 5px; background: transparent; color: inherit; }
 .publication-year { margin: 1.4rem 0 .1rem; padding-top: .45rem; border-top: 1px solid #e5e7eb; text-align: right; color: #d8dce1; font-size: 1.9rem; font-weight: 400; }
 .publication-list { list-style: none; margin: 0; padding: 0; }
-.publication-item { display: grid; grid-template-columns: minmax(0, 1fr) 128px; gap: 1.45rem; align-items: start; position: relative; margin: 0; padding: 1.15rem 0; border-bottom: 1px solid #eceff2; }
+.publication-item { display: grid; grid-template-columns: minmax(0, 1fr) 150px; gap: 1.45rem; align-items: start; position: relative; margin: 0; padding: 1.15rem 0; border-bottom: 1px solid #eceff2; }
 .publication-item--no-thumbnail { grid-template-columns: minmax(0, 1fr); }
 .publication-list > .publication-item:last-child { border-bottom: 0; }
 .publication-item[hidden], .publication-year-group[hidden] { display: none; }
-.publication-media { position: relative; z-index: 1; width: 128px; }
+.publication-media { position: relative; z-index: 1; width: 150px; }
 .publication-item:hover .publication-media, .publication-item:focus-within .publication-media { z-index: 5; }
-.publication-badge { display: block; overflow: hidden; margin: 0 0 .35rem; padding: .23rem .4rem; border-radius: 3px; background: #356a91; color: #fff; text-align: center; text-overflow: ellipsis; white-space: nowrap; font-size: .68rem; font-weight: 700; letter-spacing: .02em; }
 .publication-thumbnail { display: block; width: 100%; position: relative; z-index: 1; }
 .publication-thumbnail img { display: block; width: 100%; height: auto; border: 1px solid #e1e5ea; background: #f4f6f8; box-shadow: 0 2px 7px rgba(0,0,0,.12); transform: scale(1); transform-origin: top right; transition: transform .22s ease, box-shadow .22s ease; }
 .publication-thumbnail:hover img, .publication-thumbnail:focus-visible img { transform: scale(5); box-shadow: 0 8px 24px rgba(0,0,0,.24); }
@@ -30,9 +29,9 @@ author_profile: false
 .publication-action { display: inline-block; padding: .2rem .55rem; border: 1px solid #777; border-radius: 2px; color: inherit; text-decoration: none; font-size: .76rem; line-height: 1.35; }
 .publication-action:hover, .publication-action:focus-visible { background: #f1f4f7; text-decoration: none; }
 @media (max-width: 600px) {
-  .publication-item { grid-template-columns: minmax(0, 1fr) 88px; gap: .9rem; }
-  .publication-media { width: 88px; }
-  .publication-thumbnail:hover img, .publication-thumbnail:focus-visible img { transform: scale(4.5); }
+  .publication-item { grid-template-columns: minmax(0, 1fr) 100px; gap: .9rem; }
+  .publication-media { width: 100px; }
+  .publication-thumbnail:hover img, .publication-thumbnail:focus-visible img { transform: scale(3.5); }
   .publication-year { font-size: 1.6rem; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -71,7 +70,6 @@ author_profile: false
         </div>
         {% if publication_thumbnail %}
         <div class="publication-media">
-          <span class="publication-badge">{{ publication.badge | escape }}</span>
           <a class="publication-thumbnail" href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener" aria-label="Open the PDF for {{ publication.title | escape }}">
             <img src="{{ publication_thumbnail.path | relative_url }}" alt="{{ publication.thumbnail_alt | escape }}">
           </a>
