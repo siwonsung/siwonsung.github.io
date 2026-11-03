@@ -13,6 +13,7 @@ author_profile: false
 .publication-year { margin: 1.4rem 0 .1rem; padding-top: .45rem; border-top: 1px solid #e5e7eb; text-align: right; color: #d8dce1; font-size: 1.9rem; font-weight: 400; }
 .publication-list { list-style: none; margin: 0; padding: 0; }
 .publication-item { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 1.45rem; align-items: start; position: relative; margin: 0; padding: 1.15rem 0; border-bottom: 1px solid #eceff2; }
+.publication-item--no-thumbnail { grid-template-columns: minmax(0, 1fr); }
 .publication-item[hidden], .publication-year-group[hidden] { display: none; }
 .publication-media { position: relative; z-index: 1; width: 128px; }
 .publication-item:hover .publication-media, .publication-item:focus-within .publication-media { z-index: 5; }
@@ -53,19 +54,19 @@ author_profile: false
         {% assign thumbnail_jpg = '/images/publications/' | append: publication.slug | append: '.jpg' %}
         {% assign thumbnail_jpeg = '/images/publications/' | append: publication.slug | append: '.jpeg' %}
         {% assign thumbnail_png = '/images/publications/' | append: publication.slug | append: '.png' %}
-        {% assign thumbnail_svg = '/images/publications/' | append: publication.slug | append: '.svg' %}
         {% assign publication_thumbnail = site.static_files | where: "path", thumbnail_webp | first %}
         {% unless publication_thumbnail %}{% assign publication_thumbnail = site.static_files | where: "path", thumbnail_jpg | first %}{% endunless %}
         {% unless publication_thumbnail %}{% assign publication_thumbnail = site.static_files | where: "path", thumbnail_jpeg | first %}{% endunless %}
         {% unless publication_thumbnail %}{% assign publication_thumbnail = site.static_files | where: "path", thumbnail_png | first %}{% endunless %}
-        {% unless publication_thumbnail %}{% assign publication_thumbnail = site.static_files | where: "path", thumbnail_svg | first %}{% endunless %}
-      <article class="publication-item" data-search="{{ publication.search | escape }}">
+      <article class="publication-item{% unless publication_thumbnail %} publication-item--no-thumbnail{% endunless %}" data-search="{{ publication.search | escape }}">
+        {% if publication_thumbnail %}
         <div class="publication-media">
           <span class="publication-badge">{{ publication.badge | escape }}</span>
           <a class="publication-thumbnail" href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener" aria-label="Open the PDF for {{ publication.title | escape }}">
             <img src="{{ publication_thumbnail.path | relative_url }}" alt="{{ publication.thumbnail_alt | escape }}">
           </a>
         </div>
+        {% endif %}
         <div class="publication-details">
           <h3 class="publication-title">{{ publication.title | escape }}</h3>
           <p class="publication-authors">{{ publication.authors_html }}</p>
